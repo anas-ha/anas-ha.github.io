@@ -4,29 +4,14 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Profile &mdash; Free Website Template, Free HTML5 Template by freehtml5.co</title>
+	<title>Anas Hannoun | Portfolio</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="description" content="Free HTML5 Website Template by freehtml5.co" />
-	<meta name="keywords"
-		content="free website templates, free html5, free template, free bootstrap, free website template, html5, css3, mobile first, responsive" />
-	<meta name="author" content="freehtml5.co" />
-
-	<!-- 
-	//////////////////////////////////////////////////////
-
-	FREE HTML5 TEMPLATE 
-	DESIGNED & DEVELOPED by FreeHTML5.co
-		
-	Website: 		http://freehtml5.co/
-	Email: 			info@freehtml5.co
-	Twitter: 		http://twitter.com/fh5co
-	Facebook: 		https://www.facebook.com/fh5co
-
-	//////////////////////////////////////////////////////
-	 -->
+	<meta name="description" content="Anas Hannoun | Software Developer | Portfolio" />
+	<meta name="keywords" content="Software Developer, C#, JavaScript, .NET Framework, PHP, WordPress, HTML, CSS" />
+	<meta name="author" content="Anas Hannoun" />
 
 	<!-- Facebook and Twitter integration -->
-	<meta property="og:title" content="" />
+	<!-- <meta property="og:title" content="" />
 	<meta property="og:image" content="" />
 	<meta property="og:url" content="" />
 	<meta property="og:site_name" content="" />
@@ -34,7 +19,7 @@
 	<meta name="twitter:title" content="" />
 	<meta name="twitter:image" content="" />
 	<meta name="twitter:url" content="" />
-	<meta name="twitter:card" content="" />
+	<meta name="twitter:card" content="" /> -->
 
 	<link href="https://fonts.googleapis.com/css?family=Space+Mono" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet">
@@ -99,16 +84,19 @@
 				<div class="row about-me-section-content">
 					<div class="col-md-4">
 						<ul class="info">
-							<li><span class="first-block">Full Name:</span><span class="second-block">Anas
-									Hannoun</span></li>
-							<li><span class="first-block">Email:</span><span
-									class="second-block">anas.hanoun.tech@gmail.com</span></li>
-							<!-- <li><span class="first-block">Website:</span><span class="second-block">www.yoursite.com</span></li> -->
-							<li><span class="first-block">Address:</span><span class="second-block">Enschede, The
-									Netherlands</span></li>
+							<li>
+								<span class="first-block">Full Name:</span>
+								<span class="second-block">Anas Hannoun</span>
+							</li>
+							<li><span class="first-block">Email:</span>
+								<span class="second-block"><a href="mailto:anas.hanoun.tech@gmail.com">anas.hanoun.tech@gmail.com</a></span></li>
+							<li><span class="first-block">Address:</span><span class="second-block">
+								Enschede<br>
+								The Netherlands</span></li>
 						</ul>
 					</div>
-					<div class="col-md-8">
+					<span class="col-md-2"></span>
+					<div class="col-md-6">
 						<h2>Hello There!</h2>
 						<p>I'm a passionate and experienced software developer with over 3 years of hands-on experience
 							in the industry. With a solid foundation in C#, .NET Framework, AngularJS, PHP, WordPress,
@@ -488,7 +476,7 @@
 			</div>
 		</div>
 
-		<div id="fh5co-work" class="fh5co-bg-dark">
+		<!-- <div id="fh5co-work" class="fh5co-bg-dark">
 			<div class="container">
 				<div class="row animate-box">
 					<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
@@ -562,7 +550,7 @@
 					</div>
 				</div>
 			</div>
-		</div>
+		</div> -->
 
 		<!-- <div id="fh5co-blog">
 			<div class="container">
@@ -645,40 +633,52 @@
 			<div class="video fh5co-video" style="background-image: url(images/cover_bg_1.jpg);">
 				<div class="overlay"></div>
 			</div>
-			<div class="choose animate-box">
+			<div class="choose">
 				<h2>Contact</h2>
-				<form action="#">
+				<form action="https://api.staticforms.xyz/submit" method="post" id="staticform">
+					<input type="hidden" name="accessKey" value="07a0384a-7e92-458d-9a8d-f2b03f7ba3c0">
+					<!-- Replace with the url you want to redirect to -->
+					<input type="hidden" name="redirectTo" value="https://anas-ha.github.io">
+
 					<div class="row form-group">
 						<div class="col-md-6">
-							<input type="text" id="fname" class="form-control" placeholder="Your firstname">
-						</div>
-					</div>
-					<div class="row form-group">
-						<div class="col-md-6">
-							<input type="text" id="lname" class="form-control" placeholder="Your lastname">
+							<input type="text" id="name" name="name" class="form-control" required placeholder="Name">
+							<span class="required-input-asterisk">&#42;</span>
 						</div>
 					</div>
 
 					<div class="row form-group">
 						<div class="col-md-12">
-							<input type="text" id="email" class="form-control" placeholder="Your email address">
+							<input type="text" id="email" name="email" class="form-control" required
+								placeholder="Email">
+							<span class="required-input-asterisk">&#42;</span>
+
 						</div>
 					</div>
 
 					<div class="row form-group">
 						<div class="col-md-12">
-							<input type="text" id="subject" class="form-control"
-								placeholder="Your subject of this message">
+							<input type="text" id="phone" name="phone" class="form-control" required
+								placeholder="Phone">
 						</div>
 					</div>
 
 					<div class="row form-group">
 						<div class="col-md-12">
-							<textarea name="message" id="message" cols="30" rows="10" class="form-control"
-								placeholder="Say something about us"></textarea>
+							<input type="text" id="subject" name="subject" class="form-control"
+								placeholder="What's this really about ? 🙄">
+						</div>
+					</div>
+
+					<div class="row form-group">
+						<div class="col-md-12">
+							<textarea name="message" id="message" cols="30" rows="10" class="form-control" required
+								placeholder="Avengers, assemble .. your thoughts here! ⍟⎊⧗✇✵۞ϟ४꘩ᗢ✪➳"></textarea>
+							<span class="required-input-asterisk">&#42;</span>
 						</div>
 					</div>
 					<div class="form-group">
+						<input type="text" name="honeypot" style="display: none;"> <!-- Optional -->
 						<input type="submit" value="Send Message" class="btn btn-primary">
 					</div>
 
@@ -687,6 +687,7 @@
 		</div>
 
 		<!-- <div id="map" class="fh5co-map"></div> -->
+		<small class="freehtml5-credits"><i>Kudos to http://freehtml5.co/</i></small>
 	</div>
 
 
