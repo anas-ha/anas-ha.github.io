@@ -16,8 +16,8 @@ body {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.7;
-  color: #4d4d4d;
-  background: #fff;
+  color: #fff;
+  background: #242526;
 }
 
 #page {
@@ -66,6 +66,7 @@ a:focus {
 
 p {
   margin-bottom: 30px;
+  opacity: .8;
 }
 
 h1,
@@ -75,7 +76,7 @@ h4,
 h5,
 h6,
 figure {
-  color: #000;
+  color: #fff;
   font-family: "Space Mono", Arial, serif;
   font-weight: 400;
   margin: 0 0 20px 0;
@@ -252,7 +253,19 @@ figure {
 #fh5co-header .display-tc .fh5co-social-icons li a i,
 .fh5co-cover .display-tc .fh5co-social-icons li a i {
   font-size: 30px;
+  border: 1px solid;
+  padding: 10px;
+  border-radius: 100%;
+  background: #242526;
+  color: #FF9900;
+
 }
+#fh5co-header .display-tc .fh5co-social-icons li a i:hover,
+.fh5co-cover .display-tc .fh5co-social-icons li a i:hover{
+  color: #242526;
+  background: #FF9900;
+  border: none;
+} 
 
 #fh5co-features {
   background: #FF9000;
@@ -283,7 +296,7 @@ figure {
   width: 100px;
   height: 100px;
   margin: 0 auto;
-  background: #fff;
+  background: #3a3b3c;
   margin-bottom: 20px;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
@@ -311,7 +324,6 @@ figure {
 
 #fh5co-features .feature-left p {
   font-size: 16px;
-  color: rgba(255, 255, 255, 0.7);
 }
 
 #fh5co-features .feature-left p:last-child {
@@ -346,6 +358,19 @@ figure {
   #fh5co-contact {
     padding: 3em 0;
   }
+}
+
+.row.fh5co-skills-charts-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.fh5co-skill-chart {
+  margin: 1%;
+}
+.row.fh5co-skills-charts-container::before{
+  display: none !important;
 }
 
 #fh5co-started {
@@ -389,7 +414,7 @@ figure {
   width: 40%;
   display: inline-block;
   float: left;
-  color: #000;
+  color: #fff;
   font-weight: bold;
 }
 
@@ -431,6 +456,7 @@ figure {
 #fh5co-about .fh5co-social-icons {
   margin: 0;
   padding: 0;
+  float: inline-end;
 }
 
 #fh5co-about .fh5co-social-icons li {
@@ -454,6 +480,7 @@ figure {
   -moz-border-radius: 2px;
   -ms-border-radius: 2px;
   border-radius: 2px;
+  border: 1px solid #FF9000;
 }
 
 #fh5co-about .fh5co-social-icons li a i {
@@ -462,6 +489,8 @@ figure {
 
 #fh5co-about .fh5co-social-icons li a:hover {
   background: #FF9000;
+  border: 1px solid #fff;
+  scale: 2;
 }
 
 .fh5co-heading {
@@ -476,13 +505,12 @@ figure {
   font-size: 40px;
   margin-bottom: 20px;
   line-height: 1.5;
-  color: #000;
+  color: #fff;
 }
 
 .fh5co-heading p {
   font-size: 18px;
   line-height: 1.5;
-  color: #828282;
 }
 
 .fh5co-heading span {
@@ -535,7 +563,7 @@ figure {
   text-transform: uppercase;
   letter-spacing: 5px;
   font-weight: bold;
-  background: #e6e6e6;
+  background: #7f7f7f;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   -ms-border-radius: 4px;
@@ -641,8 +669,9 @@ figure {
 }
 
 .timeline>li.timeline-unverted,
-.timeline>li.timeline-inverted {
-  text-align: center;
+.timeline>li.timeline-inverted,
+#fh5co-resume div.timeline-panel > div.timeline-body > ul > li {
+  text-align: left;
 }
 
 @media screen and (max-width: 768px) {
@@ -650,10 +679,13 @@ figure {
   .timeline>li.timeline-unverted,
   .timeline>li.timeline-inverted {
     text-align: center;
+    display: flex;
+    justify-content: center;
   }
 
   .timeline>li.timeline-heading {
-    margin-left: 25%;
+    display: flex;
+    justify-content: center;
   }
 }
 
@@ -915,13 +947,9 @@ figure {
   margin-bottom: 20px !important;
 }
 
-#fh5co-started .fh5co-heading p {
-  color: rgba(255, 255, 255, 0.8);
-}
 
-#fh5co-started .btn {
+.btn {
   height: 54px;
-  border: none !important;
   background: #fff;
   color: #FF9000;
   font-size: 16px;
@@ -929,6 +957,24 @@ figure {
   font-weight: 400;
   padding-left: 50px;
   padding-right: 50px;
+  border: 1px solid #FF9000;
+}
+
+.btn:hover {
+  color: #fff;
+  background: #FF9000;
+  border: 1px solid #fff;
+}
+
+.btn.inverted:hover {
+  background: #fff;
+  color: #FF9000;
+}
+
+.btn.inverted {
+  color: #fff;
+  background: #FF9000;
+  border: 1px solid #fff;
 }
 
 .fh5co-blog {
@@ -1055,6 +1101,7 @@ figure {
   -moz-flex-wrap: wrap;
   width: 100%;
   float: left;
+  justify-content: center;
 }
 
 #fh5co-consult .video,
@@ -1226,16 +1273,16 @@ input[type="text"] {
   height: 50px;
   display: table;
   background: rgba(0, 0, 0, 0.8);
-  color: #fff;
+  color: #FF9900;
   text-align: center;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
   border-radius: 50%;
+  border: 5px solid #FF9900;
 }
 
 .gototop a i {
-  height: 50px;
   display: table-cell;
   vertical-align: middle;
 }
@@ -1245,6 +1292,9 @@ input[type="text"] {
 .gototop a:focus {
   text-decoration: none;
   outline: none;
+  background: #FF9900;
+  color: #242526;
+  border: 5px solid #242526;
 }
 
 .btn {
@@ -1516,15 +1566,21 @@ span.required-input-asterisk {
   left: -1px;
   color: red;
 }
+
 .about-me-section-content li>:last-child {
   color: rgba(255, 144, 0, 0.9);
 }
-form  {
-background: url(../images/The_Avengers_logo.svg);
-background-size: cover;
-background-position: center;
-background-repeat: no-repeat;
+
+form {
+  background: url(../images/The_Avengers_logo.svg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 
 
 }
-/*# sourceMappingURL=style.css.map */
+
+form input[type="button"],
+form input[type="submit"] {
+float: right;
+}

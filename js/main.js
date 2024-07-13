@@ -102,6 +102,32 @@
 		});
 	
 	};
+	var goToBottom = function() {
+
+		$('.lets-collaborate').on('click', function(event){
+			
+			event.preventDefault();
+	
+			$('html, body').animate({
+				scrollTop: $(document).height() - $(window).height()
+			}, 500, 'easeInOutExpo');
+			
+			return false;
+		});
+	
+		/* $(window).scroll(function(){
+	
+			var $win = $(window);
+			if ($win.scrollTop() + $win.height() < $(document).height() - 200) {
+				$('.js-bottom').addClass('active');
+			} else {
+				$('.js-bottom').removeClass('active');
+			}
+	
+		}); */
+	
+	};
+	
 
 	var pieChart = function() {
 		$('.chart').easyPieChart({
@@ -138,6 +164,7 @@
 	$(function(){
 		contentWayPoint();
 		goToTop();
+		goToBottom();
 		loaderPage();
 		fullHeight();
 		parallax();
