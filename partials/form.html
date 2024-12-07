@@ -1,0 +1,62 @@
+<div id="fh5co-consult">
+    <div class="choose">
+        <h2>Contact</h2>
+        <form action="https://api.staticforms.xyz/submit" method="post" id="staticform">
+            <input type="hidden" name="accessKey" value="07a0384a-7e92-458d-9a8d-f2b03f7ba3c0">
+            <!-- <input type="hidden" name="redirectTo" value="https://anas-ha.github.io"> -->
+            <input type="hidden" name="replyTo" value="@">
+            <div class="row form-group">
+                <div class="col-md-12">
+                    <input type="text" id="name" name="name" class="form-control" required placeholder="Name">
+                    <span class="required-input-asterisk">&#42;</span>
+                </div>
+            </div>
+
+            <div class="row form-group">
+                <div class="col-md-12">
+                    <input type="text" id="email" name="email" class="form-control" required placeholder="Email">
+                    <span class="required-input-asterisk">&#42;</span>
+
+                </div>
+            </div>
+
+            <div class="row form-group">
+                <div class="col-md-12">
+                    <input type="text" id="phone" name="phone" class="form-control" required placeholder="Phone">
+                </div>
+            </div>
+
+            <div class="row form-group">
+                <div class="col-md-12">
+                    <input type="text" id="subject" name="subject" class="form-control"
+                        placeholder="What's this really about ? 🙄">
+                </div>
+            </div>
+
+            <div class="row form-group">
+                <div class="col-md-12">
+                    <textarea name="message" id="message" cols="30" rows="10" class="form-control" required
+                        placeholder="Avengers, assemble .. your thoughts here! ⍟⎊⧗✇✵۞ϟ४꘩ᗢ✪➳"></textarea>
+                    <span class="required-input-asterisk">&#42;</span>
+                </div>
+            </div>
+            <div class="row form-group">
+                <div id="success-message">
+                    <h4>Thank you for your message!</h2>
+                        <p>We will get back to you soon.</p>
+                </div>
+                <div id="error-message">
+                    <h4>There was an error submitting the form!</h2>
+                        <p>Please try again later.</p>
+                        <pre id="error-message-text"></pre>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <input type="text" name="honeypot" style="display: none;">
+                <input type="submit" value="Send Message" class="btn inverted">
+            </div>
+        </form>
+
+    </div>
+</div>

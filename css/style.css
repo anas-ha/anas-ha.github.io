@@ -1584,3 +1584,17 @@ form input[type="button"],
 form input[type="submit"] {
 float: right;
 }
+
+#success-message {
+  display: none;
+  background-color: green;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+#error-message {
+  display: none;
+  background-color: red;
+  padding: 15px;
+  border-radius: 4px;
+}
